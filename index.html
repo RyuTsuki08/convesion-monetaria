@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Conversión monetaria~</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+
+<body>
+
+<div id="container">
+	<div id="list">
+		<a href="#inicio"><div class="open"></div></a>
+		
+		<a href="#calc_"><div class="open2"></div></a>
+		
+		
+		<a href="#dolar"><div class="open3"></div></a>
+			
+		<a href="#contacto"><div class="open4"></div></a>
+		
+	</div>
+
+	<h1 id="titleOne"></h1>
+
+	<header id="inicio"> 
+		<div id="xd" title="Calculadora">
+		<a href="#calc_"><img id="start" src="./img/dolarBs.png" tabindex="1"></img></a></div>
+
+		<div id="xd" title="Precio del dolar"><a href="#dolar" tabindex="2"><img id="start" src="./img/dolarToday.svg"></img></a></div>
+
+		<div id="xd" title="Contáctame"><a href="#contacto" tabindex="3"><img id="start" src="./img/contactus.png"></img></a></div>
+
+	</header>
+
+	
+
+	<div id="calc_">
+
+		<h1>Calculadora de moneda extranjera</h1>
+
+		<p id="resultado"></p>
+
+		<input type="text"  placeholder="Ingresa tu cantidad acá" name="dinero" id="money" tabindex="4">
+
+		<input title="Para calcular de dólares a bolívares" type="button" value="Calcular dólares a bolívares" id="send" tabindex="5">
+		<input title="Para calcular de bolívares a dólares" type="button" value="Calcular bolívares a dólares" id="sendII" tabindex="6">
+
+
+		</div>
+
+	</div>
+
+	<section id="dolar">
+		<div id="APIS" data-aos="zoom-in-right">
+			<h2>Esta información es tomada de la API de <strong>"Dolar Today"</strong></h2>
+			<p>API usada por muchas páginas alrededor de Venezuela</p>
+		</div>
+
+	<div data-aos="zoom-in-left">
+
+
+		<h1 id="dolarToday">
+			El dolar hoy está en: <b id="DL"></b> 
+		</h1>
+	</div>
+
+<div id="imgsDolar">
+
+	<div data-aos="flip-left">
+			<audio id="pq" src="./pqtumaldice.mp3" type="audio/mp3"></audio>
+				<img src="./img/madur0.png" class="madurito" / >
+			<p id="audio">Dale click a la imagen</p>
+	</div>
+
+
+
+<div data-aos="flip-right">
+	<audio id="pq1" src="./expropiese.mp3" type="audio/mp3"></audio>
+		<img src="./img/papi-chavez.jpeg" class="chaz" / >
+	<p id="audio">Dale click a la imagen</p>
+</div>
+
+</div>
+	</section>
+
+	<div id="contacto">
+		
+
+		<h1 id="tite"></h1>
+
+		<h2 id="tite2">Redes sociales</h2>
+
+		<div id="imgsContact">
+
+		<a href="https://www.facebook.com/ChristianTomas08/" target="_BLANK"><img id="imgS" src="./img/facebook.svg" / ></a>
+
+		<a href="https://www.instagram.com/tomas_christian213/" target="_BLANK"><img id="imgS" src="./img/ig.svg" / ></a>
+
+		<a href="https://github.com/RyuTsuki08" target="_BLANK"><img id="imgS" src="./img/github.svg" / ></a>
+
+		</div>
+
+		<div id="me"><h3 id="mE">Conocimientos</h3></div>
+		<div id="window" class=""> 
+			<div id="windowImgs" class="developer">
+			<ul>
+			<li><img src="./img/html5.svg">Html5</li>
+			<li><img src="./img/css3.svg">Css3</li>
+			<li><img src="./img/javascript.svg">JavaScript</li>
+			<li><img src="./img/python.svg">Python</li>
+		</ul>
+			</div>
+	    </div>
+		
+	</div>
+	<footer><p>By Tomas Christian</p></footer>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
