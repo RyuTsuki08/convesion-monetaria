@@ -1,5 +1,15 @@
 // API Dolar Today
 //https://s3.amazonaws.com/dolartoday/data.json
+/*
+	Requires
+*/
+const typed = require('typed-js');
+const Hammer = require('hammerjs');
+const aos = require('aos');
+const anime = require('animejs');
+
+// variables
+let AOS = Aos.init();
 let valoR = document.getElementById('money');
 let resultado = document.getElementById('resultado');
 let btn = document.getElementById('send');
@@ -10,14 +20,13 @@ let images = document.querySelectorAll('#xd');
 let opens = [document.querySelector('.open'), document.querySelector('.open2'), document.querySelector('.open3'), document.querySelector('.open4')];
 let pq3 = document.getElementById('pq');
 let pq2 = document.getElementById('pq1');
-let btN = document.getElementById('mE');
 let lista = document.getElementById('list');
 let ventana = document.getElementById('window');
 let ventanA = document.getElementById('windowImgs');
+let btN = document.getElementById('mE');
 let madurito = document.querySelectorAll('.madurito')[0];
 let chz = document.querySelectorAll('.chaz')[0];
 carga = false;
-
 
 
 window.addEventListener('load', (l) => {
@@ -152,11 +161,11 @@ function resultadoB()
 		conversion = parseInt(valor / dolar);
 		if(valoR.value == "")
 		{
-			$('#resultado').html('Debes escribir una cantidad, <b>lo siento</b>');
+		$('#resultado').html('Debes escribir una cantidad, <b>lo siento</b>');
 		} 
 		else if(valor < dolar)
 		{
-			$('#resultado').html(`<p class="parfF">Nuestra moneda está demasiado devaluada como para ser calculada menor qué ${dolar}, <b>lo siento</b></p>`);
+		$('#resultado').html(`<p class="parfF">Nuestra moneda está demasiado devaluada como para ser calculada menor qué ${dolar}, <b>lo siento</b></p>`);
 		} 
 		else
 		{
@@ -180,6 +189,9 @@ function resultadoD()
 		} else if(valor >= 100000)
 		{
 			$('#resultado').html('Debes escribir una cantidad menor qué')		
+		} else if(typeof(dolar)){
+			conversionI = parseFloat(conversion);
+			$('#resultado').html()
 		} else
 		{
 		$('#resultado').html(`${valor} dólares son: <b>${conversion} bolívares</b>`);
@@ -237,9 +249,5 @@ hammer.on('press', (iv) => {
 			translateY: -170
 		});
 });
-
-
-AOS.init();
-
 
 
